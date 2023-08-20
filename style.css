@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c7bcb;
+}
+
+.todo-main {
+  background-color: #fff;
+  width: 800px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+.todo-head {
+  width: 80%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.head-input {
+  height: 6vh;
+  width: 70%;
+  padding-left: 10px;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: #3c7bcb;
+  outline: none;
+  border: transparent;
+  box-shadow: 0 0 2px #3c7bcb;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.head-input:focus {
+  box-shadow: 1px 1px 8px #3c7bcb;
+}
+.head-add {
+  height: 6vh;
+  width: 20%;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: #3c7bcb;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: transparent;
+  background: #fff;
+  box-shadow: 0 0 2px #3c7bcb;
+}
+.head-add:hover {
+  cursor: pointer;
+  transition: 0.3s linear;
+  background: #e7e7e7;
+}
+.head-add:active {
+  background: #cbcbcb;
+}
+
+.todo-section {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+}
+.list {
+  width: 95%;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 2px #3c7bcb;
+  padding: 0 10px;
+}
+@keyframes animate1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.info {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #3c7bcb;
+}
+.line {
+  text-decoration: line-through;
+}
+.btn-box {
+  display: flex;
+  gap: 10px;
+}
+.save-btn {
+  font-size: 1.2rem;
+  background-color: rgb(20, 255, 20);
+  width: 5vh;
+  height: 5vh;
+  cursor: pointer;
+  border: transparent;
+  border-radius: 3px;
+}
+.save-hover-active:hover {
+  background: rgb(150, 255, 200);
+}
+.save-hover-active:active {
+  background: rgb(150, 255, 150);
+}
+.delete-btn {
+  font-size: 1.2rem;
+  background-color: rgb(255, 20, 20);
+  width: 5vh;
+  height: 5vh;
+  cursor: pointer;
+  border: transparent;
+  border-radius: 3px;
+}
+.delete-btn:hover {
+  background: rgb(255, 150, 200);
+}
+.delete-btn:active {
+  background: rgb(255, 150, 150);
+}
